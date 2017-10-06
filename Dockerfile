@@ -1,9 +1,6 @@
 # Use offical Ubuntu image
 FROM ubuntu:latest
 
-# Myself
-MAINTAINER jarek.grzabel@gmail.com
-
 # Let's add necessary packages...
 RUN apt-get update -y
 RUN apt-get install curl build-essential curl qt5-default libidn2-0-dev libidn11 libidn11-dev libqca-qt5-2-dev libqt5x11extras5-dev qtmultimedia5-dev -y
