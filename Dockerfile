@@ -3,7 +3,10 @@ FROM ubuntu:latest
 
 # Let's add necessary packages...
 RUN apt-get update -y
-RUN apt-get install curl build-essential curl qt5-default libidn2-0-dev libidn11 libidn11-dev libqca-qt5-2-dev libqt5x11extras5-dev qtmultimedia5-dev -y
+RUN apt-get install curl build-essential \
+    qt5-default libidn2-0-dev libidn11 \ 
+    libidn11-dev libqca-qt5-2-dev \
+    libqt5x11extras5-dev qtmultimedia5-dev -y
 
 # Download PSI
 RUN curl -o /tmp/psi-1.3.xz https://10gbps-io.dl.sourceforge.net/project/psi/Psi/1.3/psi-1.3.tar.xz
